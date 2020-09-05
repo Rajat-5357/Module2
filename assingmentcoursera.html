@@ -11,7 +11,23 @@
 		h2{
 			text-align: center;
 		}
-		p{
+
+		.sec_title{
+			border: 4px;
+    border-style: solid;
+    border-color: #00008B;
+    width: 120px;
+    margin: 0px;
+    text-align: center;
+    font-size: 140%;
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    top: -3px;
+    right: -4px;
+
+		}
+		.sec{
 			border: 1px solid green;
 			height:150px;
 		width:90%;
@@ -32,26 +48,47 @@
 				width:33%;
 			}
 		}
-		@media(min-width: 950px) and (max-width: 1199px){
+		@media(min-width: 768px) and (max-width: 1199px){
 			.col-md-6{
 				float:left;
 				border:1px solid green;
 				width:50%;
 			}
 		}
+
+		@media(max-width:767px)
+		{.col-x-12{
+			float:left;
+			width:100%;
+		}
+		}
 		h3{
 			text-align:right;
 			border:1px solid black;
+		}
+
+		.heading{float:right;
+			border:4px solid blue;
+			background-color:pink;
+			color:red;
+			width:150px;
+			text-align: center;
+			font-size:20px;
+
 		}
 	</style>
 </head>
 <body>
 <h2>OUR MENU</h2>
 <div class="row">
-	<div class="col-lg-4 col-md-6" >
-		<p>turjhrjk mehiuwhrk jjwi2 khi34t hio3t wu23l .kwuyr93 kho3k iueyr3p3 iuynf jwri3tyi jhfitr9 kwhr24u2 o3irhk t3u3niu.</p></div>
-<div class="col-lg-4 col-md-6" ><p>turjhrjk mehiuwhrk jjwi2 khi34t hio3t wu23l .kwuyr93 kho3k iueyr3p3 iuynf jwri3tyi jhfitr9 kwhr24u2 o3irhk t3u3niu.</p></div>
-<div class="col-lg-4 col-md-6" ><p>turjhrjk mehiuwhrk jjwi2 khi34t hio3t wu23l .kwuyr93 kho3k iueyr3p3 iuynf jwri3tyi jhfitr9 kwhr24u2 o3irhk t3u3niu.</p></div>
-</div>
+	<div class="col-lg-4 col-md-6 col-x-12" >
+		<div class="sec"><span class="heading">CHICKEN</span><br>
+		
+		<p> turjhrjk mehiuwhrk jjwi2 khi34t hio3t wu23l .kwuyr93 kho3k iueyr3p3 iuynf jwri3tyi jhfitr9 kwhr24u2 o3irhk t3u3niu.</p></div></div>
+<div class="col-lg-4 col-md-6 col-x-12"><div class="sec"><span class="heading">CAKE</span><br>
+	<p>turjhrjk mehiuwhrk jjwi2 khi34t hio3t wu23l .kwuyr93 kho3k iueyr3p3 iuynf jwri3tyi jhfitr9 kwhr24u2 o3irhk t3u3niu.</p></div></div>
+<div class="col-lg-4 col-md-6 col-x-12" ><div class="sec"><span class="heading">CANDEY</span><br>
+	<p>turjhrjk mehiuwhrk jjwi2 khi34t hio3t wu23l .kwuyr93 kho3k iueyr3p3 iuynf jwri3tyi jhfitr9 kwhr24u2 o3irhk t3u3niu.</p></div>
+</div></div>
 </body>
 </html>
